@@ -13,14 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div class="wraper"
+<body class="bg-dark">
+    <div class="wraper">
     </div>   
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-dark bg-dark avbar-expand-lg">
         <a class="navbar-brand" href="index.html">UFO Sightings</a>
       </nav>
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+        <h1 class="display-4">The Truth Is Out There</h1>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -48,13 +48,25 @@
               <li class="list-group-item">
                 <label for="date">Enter Date</label>
                 <input type="text" placeholder="1/10/2010" id="datetime" />
-                  
               </li>
               <li class="list-group-item">
-                <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                <label for="city">Enter a City</label>
+                <input type="text" placeholder="bonita" id="city"/>
+              </li>
+              <li class="list-group-item">
+                <label for="state">Enter a State</label>
+                <input type="text" placeholder="ca" id="state"/>
+              </li>
+              <li class="list-group-item">
+                <label for="country">Enter a Country</label>
+                <input type="text" placeholder="us" id="country"/>
+              </li>  
+              <li class="list-group-item">
+                <label for="shape">Enter a Shape</label>
+                <input type="text" placeholder="us" id="shape"/>  
               </li>
             </ul>
-          </div>
+           </div>
           <div class="col-md-9">
             <table calss="table table-striped">
                 <thead>
@@ -74,5 +86,8 @@
           </div>
         </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+      <script src="static/js/data.js"></script>
+      <script src="static/js/app.js"></script>
 </body>
 </html>
